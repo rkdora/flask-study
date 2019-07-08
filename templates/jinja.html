@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>jinja練習</title>
+  </head>
+  <body>
+    <h1>{{ message }}</h1>
+    <hr>
+    <ul>
+      {% for i in li %}
+        <li>{{ i }}</li>
+      {% endfor %}
+    </ul>
+    <hr>
+    <p>{{ "name: %s lang: %s" % (dic["name"], dic["lang"]) }}</p>
+  </body>
+</html>
